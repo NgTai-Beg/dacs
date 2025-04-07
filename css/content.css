@@ -1,0 +1,45 @@
+.phishing-warning {
+    border-left: 4px solid red !important;
+    padding-left: 10px !important;
+    background-color: #fff0f0 !important;
+}
+
+.phishing-tag {
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.suspicious-url {
+    color: red !important;
+    font-weight: bold !important;
+}
+.phishing-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    z-index: 99999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.phishing-notification.warning {
+    background-color: #ff9800;
+}
+
+.phishing-notification.error {
+    background-color: #f44336;
+}

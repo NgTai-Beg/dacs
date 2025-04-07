@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #status {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .warning {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .danger {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    .settings-section {
+      margin-top: 15px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h3>Advanced Phishing Detector</h3>
+  <button id="scanButton">Scan Current Emails</button>
+  <button id="scanNewButton">Scan New Emails Automatically</button>
+  
+  <div class="settings-section">
+    <h4>Settings</h4>
+    <label>
+      <input type="checkbox" id="checkUrls"> Check for suspicious URLs
+    </label>
+    <label>
+      <input type="checkbox" id="checkKeywords"> Check for phishing keywords
+    </label>
+    <label>
+      <input type="checkbox" id="checkSender"> Verify sender domain
+    </label>
+  </div>
+  
+  <div id="status"></div>
+  <script src="js/popup.js"></script>
+</body>
+</html>
